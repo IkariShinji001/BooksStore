@@ -1,9 +1,10 @@
 
 import Button from "./Button";
 
+
 function Banner() {
     return (
-        <div className="flex h-full mx-auto max-w-screen-xl justify-between mt-10 pb-20">
+        <div data-aos="fade-up" className="flex h-full mx-auto max-w-screen-xl justify-between pt-10 pb-20">
             <div className="w-5/12">
                 <div className="flex flex-col justify-center w-full h-full">
                     <span className="text-2xl text-white font-cardo relative"><span className="w-10 h-0.5 bg-secondary-yellow absolute block top-1/2"></span> <h3 className="ml-12 italic">Welcome to Books Store</h3></span>
@@ -22,22 +23,25 @@ function Banner() {
 
                     <div>
                         <table className="w-full">
-                            <tr className="mt-8 flex justify-around text-xl text-white font-cardo">
-                                <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Pages:</td>
-                                <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Length:</td>
-                                <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Ratings:</td>
-                            </tr>
-                            <tr className="flex justify-around text-lg text-[#B4C7E7] font-cardo">
-                                <td className="w-full">589pages</td>
-                                <td className="w-full">12 hours</td>
-                                <td className="w-full">4.3/5(204 ratings)</td>
-                            </tr>
+                            <tbody>
+
+                                <tr className="mt-8 flex justify-around text-xl text-white font-cardo">
+                                    <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Pages:</td>
+                                    <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Length:</td>
+                                    <td className="w-full"><i className="fa-solid fa-circle text-xs text-secondary-yellow"></i> Ratings:</td>
+                                </tr>
+                                <tr className="flex justify-around text-lg text-[#B4C7E7] font-cardo">
+                                    <td className="w-full">589pages</td>
+                                    <td className="w-full">12 hours</td>
+                                    <td className="w-full">4.3/5(204 ratings)</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
 
                 </div>
             </div>
-            <div className="w-5/12 border-solid border-border-img border-8">
+            <div data-aos="zoom-in-up" className="w-5/12 border-solid border-border-img border-8">
                 <img
                     src="https://scontent.fvca1-2.fna.fbcdn.net/v/t1.6435-9/119200715_179137923678293_4417760804110970647_n.jpg?stp=dst-jpg_p843x403&_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=irTDMvOQdBsAX9GAL_p&_nc_ht=scontent.fvca1-2.fna&oh=00_AfCh6gtTrbl27c3marNttaAttdSzpHeJ4_MeL4buqtDmzA&oe=641F0DE7"
                     alt=""

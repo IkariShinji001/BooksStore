@@ -4,16 +4,17 @@ const jwt = require("jsonwebtoken")
 const userController = {
     async register(req, res) {
         try {
+            console.log(req.body);
             const newUser = new Users({
                 username: req.body.username,
-                mail: req.body.mail,
                 password: req.body.password,
+                email: req.body.email,
             })
             await newUser.save()
             res.status(200).json({ message: "ok", data: newUser });
 
         } catch (err) {
-            res.json("Duplicate username or mail" + err);
+            res.json({ message: err });
         }
 
     },

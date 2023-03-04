@@ -7,11 +7,11 @@ function TestimonialReader({ imgAvatar, userName, star, title, desc }) {
                     <div className="flex flex-col justify-center items-center w-1/3">
                         <h2 className="text-white font-cardo text-xl">Duy Trần</h2>
                         <div className=" w-2/3 flex justify-between text-secondary-yellow mt-4 items-center">
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <i className="fa-solid fa-circle"></i>
+                            <i className="fa-solid fa-circle"></i>
+                            <i className="fa-solid fa-circle"></i>
+                            <i className="fa-solid fa-circle"></i>
+                            <i className="fa-solid fa-circle-half-stroke"></i>
                         </div>
                     </div>
                 </div>

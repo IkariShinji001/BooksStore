@@ -5,7 +5,6 @@ const auth = (req, res, next) => {
     if (!authorization) {
         return res.status(401).json({ message: "Unauthorized" });
     }
-    console.log(process.env.CLOUD_NAME);
     const token = authorization.split(' ')[1];
     jwt.verify(token, process.env.SECRET_TOKEN, (err, decoded) => {
         if (err) return res.status(401).send({ message: 'Unauthorized' });

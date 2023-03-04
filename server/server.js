@@ -4,6 +4,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const userRoute = require("./Routes/userRoute")
 const bookRoute = require("./Routes/bookRoute")
+const bookAdminRoute = require("./Routes/bookAdminRoute")
 const dotenv = require("dotenv");
 const auth = require("./Auth/auth");
 const authAdmin = require("./Auth/authAdmin");
@@ -25,7 +26,11 @@ app.use(cors());
 
 app.use("/api/", userRoute);
 
-app.use("/api/", auth, authAdmin, bookRoute);
+app.use("/api/", auth, bookRoute);
+
+app.use("/api/", auth, authAdmin, bookAdminRoute);
+
+
 
 
 app.listen(process.env.PORT, () => {
